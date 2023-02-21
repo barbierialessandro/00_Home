@@ -4,8 +4,16 @@
    @barbierialessandro
 
 - 👀**I am looking for post-doc positions** and I’m interested in Computational Medicinal Chemistry and Cryo-electron microscopy. 
-- I’m currently learning novel computational techniques
 - 📫 How to reach me > *EMAIL :* barbierialessandro@hotmail.it *SKYPE :* alessandro_barbieri87
+
+
+
+
+
+
+
+
+
 
 <!---
 barbierialessandro/barbierialessandro is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
