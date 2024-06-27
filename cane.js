@@ -18,7 +18,7 @@ function createFlareplot(width, inputGraph, containerSelector){
     var rx = w * 0.5;
     var ry = w * 0.5;
     var rotate = 0;
-    var discRad = 155;
+    var discRad = 55;
 
     if( typeof inputGraph == "string" ){
         inputGraph = JSON.parse(inputGraph);
@@ -71,7 +71,7 @@ function createFlareplot(width, inputGraph, containerSelector){
 
             line = d3.svg.line.radial()
                 .interpolate("bundle")
-                .tension(0.85)
+                .tension(0.65)
                 .radius(function(d) { return d.y; })
                 .angle(function(d) { return d.x / 180 * Math.PI; });
 
