@@ -18,7 +18,7 @@ function createFlareplot(width, inputGraph, containerSelector){
     var rx = w * 0.5;
     var ry = w * 0.5;
     var rotate = 0;
-    var discRad = 55;
+    var discRad = 155;
 
     if( typeof inputGraph == "string" ){
         inputGraph = JSON.parse(inputGraph);
