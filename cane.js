@@ -71,7 +71,7 @@ function createFlareplot(width, inputGraph, containerSelector){
 
             line = d3.svg.line.radial()
                 .interpolate("bundle")
-                .tension(0.65)
+                .tension(0.85)
                 .radius(function(d) { return d.y; })
                 .angle(function(d) { return d.x / 180 * Math.PI; });
 
@@ -140,7 +140,7 @@ function createFlareplot(width, inputGraph, containerSelector){
                 .on("click", function(d){ toggleNode(d); });
 
 
-            var arcW = 250.0/(graph.nodeNames.length)*Math.PI/360;
+            var arcW = 300.0/(graph.nodeNames.length)*Math.PI/360;
             var arc = d3.svg.arc()
                 .innerRadius(ry-25)
                 .outerRadius(function(d,i){
