@@ -140,7 +140,7 @@ function createFlareplot(width, inputGraph, containerSelector){
                 .on("click", function(d){ toggleNode(d); });
 
 
-            var arcW = 300.0/(graph.nodeNames.length)*Math.PI/360;
+            var arcW = 250.0/(graph.nodeNames.length)*Math.PI/360;
             var arc = d3.svg.arc()
                 .innerRadius(ry-25)
                 .outerRadius(function(d,i){
@@ -600,7 +600,7 @@ function createFlareplot(width, inputGraph, containerSelector){
 
             var widthScale = d3.scale.linear()
                 .domain([1,subset.length])
-                .range([2,10]);
+                .range([2,15]);
 
             path.style("stroke-width",
                 function(d,i){
