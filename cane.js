@@ -142,11 +142,11 @@ function createFlareplot(width, inputGraph, containerSelector){
 
             var arcW = 250.0/(graph.nodeNames.length)*Math.PI/360;
             var arc = d3.svg.arc()
-                .innerRadius(ry-15)
+                .innerRadius(ry-25)
                 .outerRadius(function(d,i){
                   var sz = d.size;
                   if(!sz) { sz = 0.0; }
-                  var or = ry-15+sz*15;
+                  var or = ry-25+sz*25;
                   return or;
                 })
                 .startAngle(-arcW)
@@ -758,11 +758,11 @@ function createFlareplot(width, inputGraph, containerSelector){
 
             var arcW = 250.0/(graph.nodeNames.length)*Math.PI/360;
             var arc = d3.svg.arc()
-                .innerRadius(ry-15)
+                .innerRadius(ry-25)
                 .outerRadius(function(d){
                     var sz = d.size;
                     if(!sz) sz = 0.0;
-                    return ry-15+sz*15;
+                    return ry-25+sz*25;
                 })
                 .startAngle(-arcW)
                 .endAngle(arcW);
@@ -903,11 +903,11 @@ function createFlareplot(width, inputGraph, containerSelector){
 
             var arcW = 250.0/(graph.nodeNames.length)*Math.PI/360;
             var arc = d3.svg.arc()
-                .innerRadius(ry-15)
+                .innerRadius(ry-25)
                 .outerRadius(function(d){
                     var sz = d.size;
                     if(!sz) sz = 0.0;
-                    return ry-15+sz*15;
+                    return ry-25+sz*25;
                 })
                 .startAngle(-arcW)
                 .endAngle(arcW);
